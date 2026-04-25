@@ -6,7 +6,7 @@ This project helps students learn Chemistry in a structured and visual way with 
 ---
 
 ## 🚀 Live Demo
-👉 (Add your Vercel / GitHub Pages link here)
+👉 https://chem-project-teal.vercel.app
 
 ---
 
