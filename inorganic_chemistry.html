@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inorganic Chemistry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <h1>Chemistry Learning</h1>
+
+  <div class="tabs">
+    <button class="tab-btn" onclick="location.href='index.html'">Organic Chemistry</button>
+    <button class="tab-btn activeTab">Inorganic Chemistry</button>
+    <button class="tab-btn" onclick="location.href='physical_chemistry.html'">Physical Chemistry</button>
+  </div></header>
+ <br>
+  <div class="profile-bar">
+    <img src="profile.jpg" class="profile-pic">
+    <div>
+      <div>Shruti Yadav</div>
+      <div>Score: <span id="scoreTop">0</span>  Attempts: <span id="attemptsTop">0</span></div>
+    </div>
+  </div><br>
+
+
+<!-- GRID PANEL -->
+<section id="gridPanel">
+  <div class="topicGrid">
+    <div class="topic" onclick="openTopic(0)"><img src="icons/ionic.jpg"><div>Ionic Bond</div></div>
+    <div class="topic" onclick="openTopic(1)"><img src="icons/covalent.jpg"><div>Covalent Bond</div></div>
+    <div class="topic" onclick="openTopic(2)"><img src="icons/periodic.jpg"><div>Periodic Trend</div></div>
+    <div class="topic" onclick="openTopic(3)"><img src="icons/coordination.jpg"><div>Coordination</div></div>
+    <div class="topic" onclick="openTopic(4)"><img src="icons/metallurgy.jpg"><div>Metallurgy</div></div>
+  </div>
+</section>
+
+<!-- QUIZ PANEL -->
+<section id="quizPanel" style="display:none;">
+  <div class="card">
+    <h2 id="topicTitle"></h2>
+    <iframe id="videoFrame"></iframe>
+    <div id="quizBox"></div>
+
+    <div class="action-row">
+      <button class="submit-btn" onclick="submitQuiz()">Submit</button>
+      <button class="back-page-btn" onclick="backToGrid()">Back</button>
+    </div>
+
+    <div id="warning"></div>
+  </div>
+</section>
+
+<script src="inorganic.js"></script>
+
+</body>
+</html>

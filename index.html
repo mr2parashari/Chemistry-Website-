@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemistry Learning</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <h1>Chemistry Learning</h1>
+
+  <div class="tabs">
+    <button class="tab-btn activeTab" onclick="showOrganic()">Organic Chemistry</button>
+    <button class="tab-btn" onclick="location.href='inorganic_chemistry.html'">Inorganic Chemistry</button>
+    <button class="tab-btn" onclick="location.href='physical_chemistry.html'">Physical Chemistry</button>
+  </div></header><br>
+
+  <div class="profile-bar">
+    <img src="profile.jpg" class="profile-pic" alt="Profile">
+    <div class="profile-meta">
+      <div class="name-line">Shruti Yadav</div>
+      <div class="stats-line">Score: <span id="scoreTop">0</span> &nbsp;&nbsp; Attempts: <span id="attemptsTop">0</span></div>
+    </div>
+  </div> <br>
+
+
+<section id="homePanel">
+  <div id="organicGrid" class="topicGrid">
+    <div class="topic" onclick="openTopic(0)"><img src="icons/carbon.jpg"><div>Carbon Chain</div></div>
+    <div class="topic" onclick="openTopic(1)"><img src="icons/fire.jpg"><div>Combustion</div></div>
+    <div class="topic" onclick="openTopic(2)"><img src="icons/function.jpg"><div>Functional Group</div></div>
+    <div class="topic" onclick="openTopic(3)"><img src="icons/isomer.jpg"><div>Isomerism</div></div>
+    <div class="topic" onclick="openTopic(4)"><img src="icons/polymer.jpg"><div>Polymerization</div></div>
+  </div>
+</section>
+
+<section id="quizPanel" style="display:none;">
+  <div class="card">
+    <h2 id="topicTitle"></h2>
+    <iframe id="videoFrame" allowfullscreen></iframe>
+    <div id="quizBox"></div>
+    <div class="action-row">
+      <button class="submit-btn" onclick="submitQuiz()">Submit</button>
+      <button class="back-page-btn" onclick="backToGrid()">Back</button>
+    </div>
+    <div id="warning" class="warning"></div>
+  </div>
+</section>
+
+<script src="home.js"></script>
+</body>
+</html>
